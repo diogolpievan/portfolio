@@ -2,24 +2,20 @@ import { NavItem } from "./nav-item";
 
 const navItems = [
   {
-    label: "Home",
-    href: "/",
-  },
-  {
     label: "About",
-    href: "#about",
+    sectionId: "about",
   },
   {
     label: "Skills",
-    href: "#skills",
+    sectionId: "skills",
   },
   {
     label: "Contact",
-    href: "#contact",
+    sectionId: "contact",
   },
   {
     label: "CV",
-    href: "#cv",
+    sectionId: "cv",
   },
 ];
 

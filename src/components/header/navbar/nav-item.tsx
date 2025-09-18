@@ -1,10 +1,22 @@
-import Link from "next/link";
+import { Link } from "react-scroll";
 
 type NavItemProps = {
   label: string;
-  href: string;
+  sectionId: string;
 };
 
-export const NavItem = ({ label, href }: NavItemProps) => {
-  return <Link href={href}>{label}</Link>;
+export const NavItem = ({ label, sectionId }: NavItemProps) => {
+  return (
+    <Link
+      activeClass="text-emerald-400 border-b-2 border-emerald-400"
+      to={sectionId}
+      spy={true}
+      smooth={true}
+      offset={10}
+      duration={800}
+      className={"hover:text-emerald-400 transition-colors font-medium"}
+    >
+      {label}
+    </Link>
+  );
 };
