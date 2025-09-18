@@ -6,7 +6,7 @@ import { Navbar } from "./navbar";
 export const Header = () => {
   return (
     <header className="w-full flex justify-items-center sticky top-0 z-50 bg-background">
-      <div className="container flex justify-between ">
+      <div className="container flex justify-between px-40">
         <Link href={"/"}>
           <h2 className="font-bold text-2xl">
             Diogo L<span className="text-emerald-400">.</span> Pievan
