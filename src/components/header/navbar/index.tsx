@@ -21,7 +21,7 @@ const navItems = [
 
 export const Navbar = () => {
   return (
-    <nav className="flex gap-8">
+    <nav className="gap-8 hidden md:flex">
       {navItems.map((item) => (
         <NavItem key={item.label} {...item} />
       ))}
