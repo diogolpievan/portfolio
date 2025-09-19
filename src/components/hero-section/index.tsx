@@ -9,7 +9,7 @@ import { motion } from "motion/react";
 
 export const HeroSection = () => {
   return (
-    <section id="hero" className=" h-[400px] md:h-[680px]">
+    <section id="hero" className=" h-auto md:h-[680px]">
       <div className="container h-full items-center justify-around flex flex-col-reverse lg:flex-row gap-10 lg:gap-0">
         <div className="text-2xl lg:text-5xl gap-3 lg:gap-10 flex flex-col items-center justify-center lg:justify-start lg:items-stretch">
           <p className="font-bold">
