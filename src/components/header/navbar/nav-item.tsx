@@ -14,7 +14,9 @@ export const NavItem = ({ label, sectionId }: NavItemProps) => {
       smooth={true}
       offset={10}
       duration={800}
-      className={"hover:text-emerald-400 transition-colors font-medium"}
+      className={
+        "hover:text-emerald-400 transition-colors font-medium cursor-pointer"
+      }
     >
       {label}
     </Link>
