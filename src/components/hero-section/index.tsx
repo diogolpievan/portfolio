@@ -28,7 +28,7 @@ export const HeroSection = () => {
 
           <div className="text-accent flex items-center flex-col lg:flex-row justify-center lg:justify-start mt-2 lg:mt-0">
             <div>
-              <Button className="py-7 duration-700 rounded-4xl font-bold bg-transparent text-emerald-400 border-2 border-emerald-400 shadow-neon cursor-pointer">
+              <Button className="py-7 duration-700 font-bold btn">
                 DOWNLOAD CV <FiDownload />
               </Button>
             </div>
