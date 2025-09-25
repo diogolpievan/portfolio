@@ -5,6 +5,8 @@ import { MdOutlinePsychology } from "react-icons/md";
 import { PiBookOpenText } from "react-icons/pi";
 import { HiOutlineUserGroup } from "react-icons/hi2";
 
+import { Skill } from "../skill";
+
 export const AboutSection = () => {
   return (
     <section
@@ -116,9 +118,27 @@ export const AboutSection = () => {
           boas práticas e inovação para entregar soluções de qualidade e
           impacto.
         </p>
-        <div className="flex mt-8">
+        <div className="flex mt-8 flex-col">
           <h3 className="font-bold text-2xl">Top Skills</h3>
-          <div className="flex gap-2"></div>
+          <div className="flex gap-2">
+            <Skill
+              name="bi:BiLogoTypescript"
+              label="TypeScript"
+              color="#3178c6"
+            />
+            <Skill
+              name="bi:BiLogoJavascript"
+              label="JavaScript"
+              color="#F5DD27"
+            />
+            <Skill name="fa:FaNodeJs" label="Node.js" color="#4DAF51" />
+            <Skill name="fa:FaReact" label="React" color="#00D8FF" />
+            <Skill
+              name="bi:BiLogoTailwindCss"
+              label="Tailwind CSS"
+              color="#37b3ae"
+            />
+          </div>
         </div>
       </div>
     </section>
