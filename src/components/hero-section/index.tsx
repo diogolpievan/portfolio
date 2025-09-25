@@ -46,7 +46,7 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className="flex items-center justify-center">
-          <div className="w-[280px] h-[280px] lg:w-[350px] lg:h-[350px] bg-[url(/images/profile.png)] bg-cover bg-center rounded-full"></div>
+          <div className="w-[280px] h-[280px] lg:w-[350px] lg:h-[350px] bg-[url(/images/profile.webp)] bg-cover bg-center rounded-full"></div>
           <motion.div className="absolute">
             <motion.svg
               className="w-[320px] lg:w-[390px] h-[320px] lg:h-[390px]"
