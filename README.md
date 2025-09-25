@@ -1,5 +1,4 @@
 # Diogo Pievan's Portfolio
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/diogolpievan/portfolio)
 
 This repository contains the source code for my personal portfolio website, built with Next.js and Tailwind CSS. It is designed to showcase my skills, experience, and projects as a full-stack developer.
 
