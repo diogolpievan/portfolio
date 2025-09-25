@@ -11,10 +11,10 @@ export const AboutSection = () => {
   return (
     <section
       id="about"
-      className="container flex flex-col lg:flex-row gap-0 py-16 justify-between lg:px-40 items-center"
+      className="container flex flex-col lg:flex-row gap-0 py-16 justify-between xl:px-40 items-start min-h-[380px] xl:h-[380px] p-10 lg:p-0"
     >
-      <div className="flex-1 flex text-2xl">
-        <motion.div>
+      <div className="flex-1 hidden lg:flex text-2xl h-full">
+        <motion.div className="flex items-stretch h-full ">
           <motion.svg
             width="25px"
             height="100%"
@@ -24,7 +24,7 @@ export const AboutSection = () => {
               x1="10"
               y1="0"
               x2="10"
-              y2="25%"
+              y2="28%"
               strokeWidth={3}
               stroke="#00d491"
               strokeLinecap="round"
@@ -32,7 +32,7 @@ export const AboutSection = () => {
             />
             <motion.circle
               cx="10"
-              cy="35%"
+              cy="33%"
               r="7"
               fill="transparent"
               stroke="#00d491"
@@ -52,9 +52,9 @@ export const AboutSection = () => {
             />
             <motion.line
               x1="10"
-              y1="45%"
+              y1="38%"
               x2="10"
-              y2="70%"
+              y2="63%"
               strokeWidth={3}
               stroke="#00d491"
               strokeLinecap="round"
@@ -62,7 +62,7 @@ export const AboutSection = () => {
             />
             <motion.circle
               cx="10"
-              cy="80%"
+              cy="68%"
               r="7"
               fill="transparent"
               stroke="#00d491"
@@ -82,7 +82,7 @@ export const AboutSection = () => {
             />
             <motion.line
               x1="10"
-              y1="90%"
+              y1="73%"
               x2="10"
               y2="100%"
               strokeWidth={3}
@@ -93,34 +93,37 @@ export const AboutSection = () => {
           </motion.svg>
         </motion.div>
 
-        <div className="flex justify-center ml-5 items-start flex-col gap-10">
+        <div className="flex justify-center ml-5 items-start flex-col gap-5 h-full">
           <div className="flex items-center justify-start flex-1 gap-4">
-            <MdOutlinePsychology className="text-4xl " />
+            <MdOutlinePsychology className="text-5xl" />
             <h4 className="text-xl font-bold">Problem Solving</h4>
           </div>
           <div className="flex items-center justify-start flex-1 gap-4">
-            <HiOutlineUserGroup className="text-4xl" />
+            <HiOutlineUserGroup className="text-5xl" />
             <h4 className="text-xl font-bold">Collaboration</h4>
           </div>
           <div className="flex items-center justify-start flex-1 gap-4">
-            <PiBookOpenText className="text-4xl" />
+            <PiBookOpenText className="text-5xl" />
             <h4 className="text-xl font-bold">Continuous Learning</h4>
           </div>
         </div>
       </div>
 
       <div className="flex-1">
-        <h2 className="font-bold text-2xl lg:text-5xl">About</h2>
-        <p className="text-justify mt-6">
-          Sou desenvolvedor full-stack e estudante de Tecnologia em
-          Desenvolvimento de Sistemas, com experiência em front-end e back-end.
-          Busco criar aplicações modernas, responsivas e escaláveis, aplicando
-          boas práticas e inovação para entregar soluções de qualidade e
-          impacto.
-        </p>
-        <div className="flex mt-8 flex-col">
+        <div>
+          <h2 className="font-bold text-3xl lg:text-5xl">About</h2>
+          <p className="text-justify mt-6">
+            Sou desenvolvedor full-stack e estudante de Tecnologia em
+            Desenvolvimento de Sistemas, com experiência em front-end e
+            back-end. Busco criar aplicações modernas, responsivas e escaláveis,
+            aplicando boas práticas e inovação para entregar soluções de
+            qualidade e impacto.
+          </p>
+        </div>
+
+        <div className="flex flex-col mt-8 justify-center items-center md:justify-start md:items-stretch">
           <h3 className="font-bold text-2xl">Top Skills</h3>
-          <div className="flex gap-2">
+          <div className="flex gap-2 mt-4 flex-wrap justify-center items-center sm:justify-start sm:items-stretch">
             <Skill
               name="bi:BiLogoTypescript"
               label="TypeScript"
