@@ -2,8 +2,10 @@ import * as FaIcons from "react-icons/fa";
 import * as BiIcons from "react-icons/bi";
 import * as IoIcons from "react-icons/io";
 
+import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
+
 import { IconType } from "react-icons";
-import { useState } from "react";
+import { TooltipArrow } from "@radix-ui/react-tooltip";
 
 const iconsLibraries = {
   fa: FaIcons,
@@ -25,26 +27,32 @@ export const Skill = ({ name, label, color = "#00d492" }: SkillProps) => {
   const IconSet = iconsLibraries[lib];
   const IconComponent = IconSet[iconName as keyof typeof IconSet] as IconType;
 
-  const [hover, setHover] = useState(false);
-
   return (
-    <div
-      aria-label={label}
-      className="group w-20 h-20 rounded-xl flex items-center justify-center text-center cursor-pointer transition-[transform_300ms,border-color_700ms] hover:scale-110 border-2 border-background"
-      style={{
-        background: "linear-gradient(45deg, #191919 70%, #2f2f2f 120%)",
-      }}
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
-    >
-      <IconComponent
-        size={50}
-        className="text-[#666666] transition-all duration-500 ]"
-        style={{
-          color: hover ? color : "#666666",
-          filter: hover ? `drop-shadow(0px 4px 11px ${color}a2 ) ` : "",
-        }}
-      />
-    </div>
+    <Tooltip>
+      <TooltipTrigger asChild>
+        <div
+          aria-label={label}
+          className="group w-20 h-20 rounded-xl flex items-center justify-center text-center transition-[transform_300ms,border-color_700ms] hover:scale-110 border-2 border-background"
+          style={{
+            background: "linear-gradient(45deg, #191919 70%, #2f2f2f 120%)",
+          }}
+        >
+          <IconComponent
+            style={
+              {
+                "--icon-color": color,
+                "--drop-shadow": `0px 4px 11px ${color}a2`,
+              } as React.CSSProperties
+            }
+            size={50}
+            className="text-[var(--icon-color)] xl:text-[#666666] xl:group-hover:text-[var(--icon-color)] drop-shadow-[var(--drop-shadow)] xl:drop-shadow-none xl:group-hover:drop-shadow-[var(--drop-shadow)] transition-all duration-500"
+          />
+        </div>
+      </TooltipTrigger>
+      <TooltipContent side="bottom" className="bg-[#222]">
+        <p className="text-foreground p-1">{label}</p>
+        <TooltipArrow style={{ fill: "#222" }} />
+      </TooltipContent>
+    </Tooltip>
   );
 };
