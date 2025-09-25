@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Diogo Pievan's Portfolio
+[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/diogolpievan/portfolio)
+
+This repository contains the source code for my personal portfolio website, built with Next.js and Tailwind CSS. It is designed to showcase my skills, experience, and projects as a full-stack developer.
+
+## Features
+
+*   **Modern & Responsive Design:** Fully responsive layout for optimal viewing on all devices, from desktops to mobile phones.
+*   **Interactive UI:** Smooth animations and transitions powered by `motion` to create an engaging user experience.
+*   **Component-Driven Architecture:** Built with React and TypeScript, featuring a structured and maintainable component system using **shadcn/ui**.
+*   **Dynamic Skill Display:** Skills are presented with icons from `react-icons` and informative tooltips.
+*   **Smooth Navigation:** Utilizes `react-scroll` for seamless navigation between sections.
+*   **Theming & Language:** Includes a configuration menu for theme (dark mode) and language preferences.
+
+## Tech Stack
+
+*   **Framework:** [Next.js](https://nextjs.org/)
+*   **Language:** [TypeScript](https://www.typescriptlang.org/)
+*   **Styling:** [Tailwind CSS](https://tailwindcss.com/), [shadcn/ui](https://ui.shadcn.com/)
+*   **Animation:** [Motion](https://motion.dev/), [React Scroll](https://github.com/fmor/react-scroll)
+*   **Icons:** [Lucide React](https://lucide.dev/), [React Icons](https://react-icons.github.io/react-icons/)
+*   **Linting & Formatting:** ESLint, Prettier
+
+## Project Structure
+
+The codebase is organized to be clean and scalable:
+
+```
+.
+├── public/                 # Static assets (images)
+├── src/
+│   ├── app/                # Next.js App Router: pages, layout, and global styles
+│   ├── components/         # Reusable React components
+│   │   ├── about-section/
+│   │   ├── footer/
+│   │   ├── header/
+│   │   ├── hero-section/
+│   │   └── ui/             # Shadcn UI components
+│   └── lib/                # Utility functions
+├── next.config.ts          # Next.js configuration
+└── package.json            # Project dependencies and scripts
+```
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running, follow these simple steps.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You need to have Node.js and npm installed on your machine.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/diogolpievan/portfolio.git
+    cd portfolio
+    ```
 
-## Learn More
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+3.  **Run the development server:**
+    This command starts the development server on `http://localhost:3000`.
+    ```bash
+    npm run dev
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Available Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+In the `package.json`, the following scripts are available:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*   `npm run dev`: Runs the app in development mode with Turbopack.
+*   `npm run build`: Creates a production-ready build of the app with Turbopack.
+*   `npm run start`: Starts the production server after a build.
+*   `npm run lint`: Lints the project files using ESLint.
