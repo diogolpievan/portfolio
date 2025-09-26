@@ -16,7 +16,7 @@ export const Config = () => {
         />
       </DropdownMenuTrigger>
       <DropdownMenuContent className="max-h-52 bg-primary-foreground px-4 rounded-4xl mt-3">
-        <div className="container flex flex-col gap-4">
+        <div className="py-8 flex flex-col gap-4">
           <div>
             <h4>Theme</h4>
             <input type="checkbox" name="" id="" />
