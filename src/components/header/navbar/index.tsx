@@ -7,6 +7,7 @@ const navItems = [
   {
     label: "About",
     sectionId: "about",
+    offset: -100,
   },
   {
     label: "Skills",
