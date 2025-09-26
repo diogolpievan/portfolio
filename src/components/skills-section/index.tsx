@@ -1,6 +1,8 @@
 import { ReactNode } from "react";
 import { Skill } from "../skill";
 
+import styles from "./styles.module.css";
+
 type Category = "languages" | "frameworks" | "databases" | "tools";
 
 interface SkillType {
@@ -106,13 +108,13 @@ export const SkillsSection = () => {
   return (
     <section
       id="skills"
-      className="container flex justify-between xl:px-40 p-10 lg:p-0 flex-col"
+      className={`py-36 container flex justify-between px-10 flex-col ${styles["bg-grid"]}`}
     >
-      <h2 className="font-bold text-3xl lg:text-5xl">Skills</h2>
+      <h2 className="font-bold text-3xl lg:text-5xl z-20">Skills</h2>
       <p className="mt-4">
         Technologies and tools I use daily to build projects
       </p>
-      <div className="w-full flex flex-col justify-center items-center lg:justify-start lg:items-start">
+      <div className="w-full flex flex-col justify-center items-center">
         {Object.entries(mySkills).map(([category, skills]): ReactNode => {
           return (
             <div key={category} className="mt-10 skills-div">
