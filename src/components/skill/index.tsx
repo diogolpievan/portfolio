@@ -16,13 +16,13 @@ const iconsLibraries = {
 };
 
 type SkillProps = {
-  name: string;
+  icon: string;
   label: string;
   color?: string;
 };
 
-export const Skill = ({ name, label, color = "#00d492" }: SkillProps) => {
-  const [lib, iconName] = name.split(":") as [
+export const Skill = ({ icon, label, color = "#00d492" }: SkillProps) => {
+  const [lib, iconName] = icon.split(":") as [
     keyof typeof iconsLibraries,
     string
   ];

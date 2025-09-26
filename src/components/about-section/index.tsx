@@ -125,19 +125,19 @@ export const AboutSection = () => {
           <h3 className="font-bold text-2xl">Top Skills</h3>
           <div className="flex gap-2 mt-4 flex-wrap justify-center items-center sm:justify-start sm:items-stretch">
             <Skill
-              name="bi:BiLogoTypescript"
+              icon="bi:BiLogoTypescript"
               label="TypeScript"
               color="#3178c6"
             />
             <Skill
-              name="bi:BiLogoJavascript"
+              icon="bi:BiLogoJavascript"
               label="JavaScript"
               color="#F5DD27"
             />
-            <Skill name="fa:FaNodeJs" label="Node.js" color="#4DAF51" />
-            <Skill name="fa:FaReact" label="React" color="#00D8FF" />
+            <Skill icon="fa:FaNodeJs" label="Node.js" color="#4DAF51" />
+            <Skill icon="fa:FaReact" label="React" color="#00D8FF" />
             <Skill
-              name="bi:BiLogoTailwindCss"
+              icon="bi:BiLogoTailwindCss"
               label="Tailwind CSS"
               color="#37b3ae"
             />
