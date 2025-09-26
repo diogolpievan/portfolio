@@ -123,7 +123,7 @@ export const AboutSection = () => {
 
         <div className="flex flex-col mt-8 justify-center items-center md:justify-start md:items-stretch">
           <h3 className="font-bold text-2xl">Top Skills</h3>
-          <div className="skills-div">
+          <div className="mt-4 skills-div">
             <Skill
               icon="bi:BiLogoTypescript"
               label="TypeScript"
