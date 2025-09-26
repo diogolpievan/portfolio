@@ -11,9 +11,9 @@ export const AboutSection = () => {
   return (
     <section
       id="about"
-      className="container flex flex-col lg:flex-row gap-0 py-16 justify-between xl:px-40 items-start min-h-[380px] xl:h-[380px] p-10 lg:p-0"
+      className="container flex flex-col lg:flex-row gap-0 justify-between items-center px-10 md:py-36"
     >
-      <div className="flex-1 hidden lg:flex text-2xl h-full">
+      <div className="flex-1 hidden lg:flex text-2xl h-[380px]">
         <motion.div className="flex items-stretch h-full ">
           <motion.svg
             width="25px"
