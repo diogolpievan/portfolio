@@ -1,6 +1,7 @@
 import * as FaIcons from "react-icons/fa";
 import * as BiIcons from "react-icons/bi";
 import * as IoIcons from "react-icons/io";
+import * as SiIcons from "react-icons/si";
 
 import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 
@@ -11,6 +12,7 @@ const iconsLibraries = {
   fa: FaIcons,
   bi: BiIcons,
   io: IoIcons,
+  si: SiIcons,
 };
 
 type SkillProps = {
