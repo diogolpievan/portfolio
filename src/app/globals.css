@@ -52,11 +52,11 @@ html {
 }
 
 .container {
-  @apply mx-auto w-full py-8;
+  @apply mx-auto w-full xl:px-40;
 }
 
 .skills-div {
-  @apply flex gap-2 mt-4 flex-wrap justify-center items-center sm:justify-start sm:items-stretch;
+  @apply flex gap-2 flex-wrap justify-center items-center sm:justify-start sm:items-stretch;
 }
 
 :root {
