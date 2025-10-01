@@ -6,10 +6,11 @@ import { FaGithub } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 
 import { motion } from "motion/react";
+import { ProfileLink } from "../profile-link";
 
 export const HeroSection = () => {
   return (
-    <section id="hero" className=" h-auto md:h-[680px]">
+    <section id="hero" className=" h-auto md:h-[680px] pt-8 md:pt-0">
       <div className="container h-full items-center justify-around flex flex-col-reverse lg:flex-row gap-10 lg:gap-0">
         <div className="text-2xl lg:text-5xl gap-3 lg:gap-10 flex flex-col items-center justify-center lg:justify-start lg:items-stretch">
           <p className="font-bold">
@@ -33,14 +34,16 @@ export const HeroSection = () => {
               </Button>
             </div>
 
-            <div className="flex lg:ml-5 lg:gap-10 items-center justify-center lg:justify-start lg:static gap-2 lg:mt-0 mt-2">
-              <LiaLinkedin
+            <div className="flex lg:ml-5 lg:gap-2 items-center justify-center lg:justify-start lg:static gap-2 lg:mt-0 mt-2">
+              <ProfileLink
+                icon={LiaLinkedin}
+                url="https://www.linkedin.com/in/diogolpievan/"
                 size={52}
-                className="transition-all text-emerald-400  lg:text-[#3b3b3b] duration-700 hover:text-emerald-400 hover:mb-4 lg:absolute text-shadow-neon cursor-pointer"
               />
-              <FaGithub
+              <ProfileLink
+                icon={FaGithub}
+                url="https://github.com/diogolpievan"
                 size={46}
-                className="transition-all text-emerald-400  lg:text-[#3b3b3b] duration-700 hover:text-emerald-400 hover:mb-4 lg:absolute lg:ml-14 text-shadow-neon cursor-pointer "
               />
             </div>
           </div>
