@@ -140,10 +140,6 @@ html {
   }
 }
 
-.text-shadow-neon {
-  color: #3b3b3b;
-}
-
 .shadow-neon:hover {
   box-shadow: 0px 4px 11px oklch(76.864% 0.16957 161.631 / 0.493) !important;
   text-shadow: 0px 4px 11px oklch(76.864% 0.16957 161.631 / 0.493) !important;
