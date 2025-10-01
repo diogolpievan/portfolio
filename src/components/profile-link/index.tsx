@@ -1,4 +1,3 @@
-import { cn } from "@/lib/utils";
 import { IconType } from "react-icons";
 
 type ProfileLinkProps = {
